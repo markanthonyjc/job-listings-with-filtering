@@ -1,7 +1,12 @@
+import Header from "./components/layout/Header";
+import './assets/style.scss';
+import './App.scss';
+
 const App = () => {
-    return <div>
-        <h1>Hello World</h1>
-    </div>;
+    return <>
+        <Header></Header>
+        <main></main>
+    </>;
 };
 
 export default App;
