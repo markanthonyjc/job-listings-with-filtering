@@ -1,0 +1,25 @@
+@import "../../assets/mixins";
+
+.job-item {
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    margin-bottom: 0.5rem;
+  }
+
+  > .job-info > div:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+@include media($screen-medium) {
+  .job-item {
+    flex-direction: row;
+    gap: 1rem;
+
+    > * {
+      margin-bottom: initial;
+    }
+  }
+}

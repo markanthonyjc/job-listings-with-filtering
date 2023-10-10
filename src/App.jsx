@@ -1,11 +1,14 @@
-import Header from './components/layout/Header'
+import Header from './components/Layout/Header'
 import './assets/style.scss'
 import './App.scss'
+import JobMain from './components/Jobs/JobMain'
 
 const App = () => {
   return <>
         <Header></Header>
-        <main></main>
+        <main>
+            <JobMain></JobMain>
+        </main>
     </>
 }
 

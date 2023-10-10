@@ -1,0 +1,45 @@
+$screen-x-small: 320px;
+$screen-small: 576px;
+$screen-medium: 768px;
+$screen-large: 1024px;
+$screen-x-large: 1300px;
+
+@mixin card {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 5px 30px rgba(91, 164, 164, 0.3);
+
+  @media (max-width: $screen-small) {
+    width: 320px;
+  }
+
+  @media (width >= $screen-medium) {
+    padding: 2rem;
+    min-width: calc(100vw - 200px);
+  }
+}
+
+@mixin media($screen-size) {
+  @if ($screen-size <= $screen-x-small) {
+    @media (min-width: $screen-x-small) {
+      @content;
+    }
+  } @else if ($screen-size <= $screen-small) {
+    @media (min-width: $screen-small) {
+      @content;
+    }
+  } @else if ($screen-size <= $screen-medium) {
+    @media (min-width: $screen-medium) {
+      @content;
+    }
+  } @else if ($screen-size <= $screen-large) {
+    @media (min-width: $screen-large) {
+      @content;
+    }
+  } @else if ($screen-size <= $screen-x-large) {
+    @media (min-width: $screen-x-large) {
+      @content;
+    }
+  }
+}

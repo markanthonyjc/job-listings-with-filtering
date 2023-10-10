@@ -1,0 +1,22 @@
+.badge {
+  //background-color: var(--secondary-color);
+  padding: 3px 6px;
+  border-radius: 1rem;
+
+  > span {
+    color: white;
+
+    display: block;
+    padding-top: 4px;
+    box-sizing: content-box;
+  }
+}
+
+.new {
+  background-color: var(--secondary-color);
+}
+
+.featured {
+  background-color: var(--bg-alternative-color);
+}
+

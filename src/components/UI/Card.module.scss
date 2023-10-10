@@ -1,0 +1,5 @@
+@import "../../assets/mixins";
+
+.card {
+  @include card;
+}
