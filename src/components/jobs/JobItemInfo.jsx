@@ -1,14 +1,16 @@
 import style from './JobItemInfo.module.scss'
 
-const jobItemInfo = ({ job }) => {
+const JobItemInfo = ({ job }) => {
+  const { name, publishing, type, condition } = job
+
   return <div className={style['job-item-info']}>
-        <p>{job.name}</p>
+        <p>{name}</p>
         <ul className={style['job-detail']}>
-            <li>{job.publishing.time_elapsed}</li>
-            <li>{job.type}</li>
-            <li>{job.condition}</li>
+            <li>{publishing.time_elapsed}</li>
+            <li>{type}</li>
+            <li>{condition}</li>
         </ul>
     </div>
 }
 
-export default jobItemInfo
+export default JobItemInfo

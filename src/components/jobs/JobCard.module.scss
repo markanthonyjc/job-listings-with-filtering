@@ -11,3 +11,16 @@
     border-left: var(--secondary-color) solid 5px;
   }
 }
+
+@media (max-width: $screen-small) {
+  .card {
+    width: 320px;
+  }
+}
+
+@media (min-width: $screen-medium) {
+  .job-card {
+    padding: 1rem 2rem;
+    min-width: calc(100vw - 200px);
+  }
+}

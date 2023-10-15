@@ -1,5 +1,3 @@
-@import "../../assets/mixins";
-
 .job-filter {
   display: flex;
   flex-direction: row;
@@ -22,12 +20,10 @@
     color: var(--text-default-color);
     font-weight: var(--text-bold);
     text-decoration: none;
-  }
-}
 
-@include media($screen-medium) {
-  .actions a:hover {
-    color: var(--text-primary-color);
-    text-decoration-line: underline;
+    &:hover {
+      color: var(--text-primary-color);
+      text-decoration-line: underline;
+    }
   }
 }

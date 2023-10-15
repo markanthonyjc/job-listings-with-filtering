@@ -7,7 +7,10 @@ import Separator from '../UI/Separator'
 import JobItemImage from './JobItemImage'
 
 const JobItem = ({ job, addFilterHandler }) => {
-  const modifierStyle = job.company.badges.some(
+  const { company, skills } = job
+  const { image, badges } = company
+
+  const modifierStyle = badges.some(
     item => item.toLowerCase().includes(ModifierStyle.FEATURED.toLowerCase())
   )
     ? ModifierStyle.FEATURED
@@ -15,13 +18,14 @@ const JobItem = ({ job, addFilterHandler }) => {
 
   return <JobCard modifierStyle={modifierStyle}>
         <div className={style['job-item']}>
-            <JobItemImage image={job.company.image}/>
+            <JobItemImage image={image}/>
             <div className={style['job-info']}>
-                <JobItemCompany company={job.company}/>
+                <JobItemCompany company={company}/>
                 <JobItemInfo job={job}/>
             </div>
             <Separator/>
-            <JobItemSkill skills={job.skills} addFilterHandler={addFilterHandler}/>
+            <JobItemSkill skills={skills}
+                          addFilterHandler={addFilterHandler}/>
         </div>
     </JobCard>
 }

@@ -230,24 +230,24 @@ const JobMain = () => {
   const [skillsFilter, setSkillsFilter] = useState([])
 
   useEffect(() => {
-    // fetch(URL)
-    //   .then(data => data.json())
-    //   .then(data => {
-    //     setJobs(data)
-    //   })
-    //   .catch(reason => console.log('An error occurred while fetching data'))
+    fetch(URL)
+      .then(data => data.json())
+      .then(data => {
+        setJobs(data)
+      })
+      .catch(reason => console.log('An error occurred while fetching data'))
     setJobs(DATA)
   }, [])
 
   const addFilterHandler = skill => {
     if (skill && skill.target.children.length > 0) return
+
     const text = skill.target.textContent
+
     if (skillsFilter.some(item => item === text)) return
+
     setSkillsFilter(prevSkillsFilter => {
-      return [
-        ...prevSkillsFilter,
-        text
-      ]
+      return [...prevSkillsFilter, text]
     })
   }
 
@@ -267,13 +267,13 @@ const JobMain = () => {
     )
     : jobs
 
+  const renderJobFilter = skillsFilter.length &&
+        <JobFilter skills={skillsFilter}
+                   clearFilterHandler={clearFilterHandler}
+                   clearAllFilterHandler={clearAllFilterHandler}/>
+
   return <div className={style['job-main']}>
-        {
-          skillsFilter.length > 0 &&
-            <JobFilter skills={skillsFilter}
-                       clearFilterHandler={clearFilterHandler}
-                       clearAllFilterHandler={clearAllFilterHandler}/>
-        }
+        {renderJobFilter}
         <JobList jobs={jobsFiltered} addFilterHandler={addFilterHandler}/>
     </div>
 }

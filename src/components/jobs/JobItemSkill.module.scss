@@ -11,6 +11,12 @@
   > * {
     padding: 0.5rem;
     font-weight: var(--text-bold);
+
+    &:hover {
+      cursor: pointer;
+      color: white;
+      background-color: var(--bg-color);
+    }
   }
 }
 
@@ -18,11 +24,5 @@
   .job-item-skill {
     justify-content: end;
     flex-grow: 1;
-
-    > *:hover {
-      cursor: pointer;
-      color: white;
-      background-color: var(--bg-color);
-    }
   }
 }

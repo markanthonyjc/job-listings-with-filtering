@@ -3,7 +3,7 @@
 .job-list {
   display: flex;
   flex-direction: column;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   margin-bottom: 100px;
 
   > * {
@@ -12,11 +12,7 @@
 }
 
 @include media($screen-medium) {
-  .job-list {
-    margin-top: 50px;
-
-    > * {
-      margin: 0.5rem 0;
-    }
+  .job-list > * {
+    margin: 0.5rem 0;
   }
 }
