@@ -1,7 +1,7 @@
-import Header from './components/Layout/Header'
+import Header from './components/layout/Header'
 import './assets/style.scss'
 import './App.scss'
-import JobMain from './components/Jobs/JobMain'
+import JobMain from './components/jobs/JobMain'
 
 const App = () => {
   return <>
