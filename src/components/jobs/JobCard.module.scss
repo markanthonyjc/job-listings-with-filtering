@@ -13,14 +13,14 @@
 }
 
 @media (max-width: $screen-small) {
-  .card {
+  .job-card {
     width: 320px;
   }
 }
 
-@media (min-width: $screen-medium) {
+@media (min-width: $screen-small) {
   .job-card {
     padding: 1rem 2rem;
-    min-width: calc(100vw - 200px);
+    width: calc(100vw - 200px);
   }
 }
