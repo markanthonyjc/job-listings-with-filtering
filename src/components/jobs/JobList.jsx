@@ -7,8 +7,8 @@ const JobList = ({ jobs, addFilterHandler }) => {
   })
 
   return <div className={style['job-list']}>
-    {renderJobs}
-  </div>
+        {renderJobs}
+    </div>
 }
 
 export default JobList

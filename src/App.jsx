@@ -7,7 +7,7 @@ const App = () => {
   return <>
         <Header></Header>
         <main>
-            <JobMain></JobMain>
+            <JobMain/>
         </main>
     </>
 }
