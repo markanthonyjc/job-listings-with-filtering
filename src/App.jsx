@@ -1,12 +1,15 @@
-import Header from "./components/layout/Header";
-import './assets/style.scss';
-import './App.scss';
+import Header from './components/layout/Header'
+import './assets/style.scss'
+import './App.scss'
+import JobMain from './components/jobs/JobMain'
 
 const App = () => {
-    return <>
+  return <>
         <Header></Header>
-        <main></main>
-    </>;
-};
+        <main>
+            <JobMain/>
+        </main>
+    </>
+}
 
-export default App;
+export default App

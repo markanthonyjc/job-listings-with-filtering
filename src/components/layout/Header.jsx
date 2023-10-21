@@ -1,10 +1,10 @@
-import {BgHeaderMobile} from '../../assets/images';
-import style from './Header.module.scss';
+import { BgHeaderMobile } from '../../assets/images'
+import style from './Header.module.scss'
 
 const Header = () => {
-    return <header className={style.header}>
+  return <header className={style.header}>
         <img src={BgHeaderMobile} alt=""/>
-    </header>;
-};
+    </header>
+}
 
-export default Header;
+export default Header

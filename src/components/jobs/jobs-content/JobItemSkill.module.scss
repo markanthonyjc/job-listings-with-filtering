@@ -1,0 +1,28 @@
+@import "../../../assets/mixins";
+
+.job-item-skill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  > * {
+    padding: 0.5rem;
+    font-weight: var(--text-bold);
+
+    &:hover {
+      cursor: pointer;
+      color: white;
+      background-color: var(--bg-color);
+    }
+  }
+}
+
+@include media($screen-medium) {
+  .job-item-skill {
+    justify-content: end;
+    flex-grow: 1;
+  }
+}
