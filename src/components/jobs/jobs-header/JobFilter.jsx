@@ -1,6 +1,6 @@
 import JobFilterItem from './JobFilterItem'
 import style from './JobFilter.module.scss'
-import JobCard, { ModifierStyle } from './JobCard'
+import JobCard, { ModifierStyle } from '../JobCard'
 
 const JobFilter = ({ skills, clearFilterHandler, clearAllFilterHandler }) => {
   const renderSkills = skills.map((skill, index) => {

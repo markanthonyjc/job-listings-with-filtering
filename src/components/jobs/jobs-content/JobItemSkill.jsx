@@ -1,5 +1,5 @@
 import style from './JobItemSkill.module.scss'
-import Skill from '../UI/Skill'
+import Skill from '../../UI/Skill'
 
 const JobItemSkill = ({ skills, addFilterHandler }) => {
   const renderSkills = skills.map((skill, index) => {

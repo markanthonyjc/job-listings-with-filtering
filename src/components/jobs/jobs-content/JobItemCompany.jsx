@@ -1,5 +1,5 @@
 import style from './JobItemCompany.module.scss'
-import Badge from '../UI/Badge'
+import Badge from '../../UI/Badge'
 
 const JobItemCompany = ({ company }) => {
   const { name, badges } = company

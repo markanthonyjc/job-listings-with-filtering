@@ -1,6 +1,6 @@
-import Skill from '../UI/Skill'
+import Skill from '../../UI/Skill'
 import style from './JobFilterItem.module.scss'
-import { IconRemove } from '../../assets/images'
+import { IconRemove } from '../../../assets/images'
 
 const JobFilterItem = ({ name, clearFilterHandler }) => {
   return <Skill>

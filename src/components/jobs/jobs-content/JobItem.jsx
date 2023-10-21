@@ -1,9 +1,9 @@
 import style from './JobItem.module.scss'
-import JobCard, { ModifierStyle } from './JobCard'
+import JobCard, { ModifierStyle } from '../JobCard'
 import JobItemCompany from './JobItemCompany'
 import JobItemInfo from './JobItemInfo'
 import JobItemSkill from './JobItemSkill'
-import Separator from '../UI/Separator'
+import Separator from '../../UI/Separator'
 import JobItemImage from './JobItemImage'
 
 const JobItem = ({ job, addFilterHandler }) => {
