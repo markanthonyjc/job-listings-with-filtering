@@ -31,9 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Job listings with filtering from "Frontend Mentor" solution](https://your-solution-url.com)
-- Live Site URL: [Job listings with filtering from "GitHub" page](https://your-live-site-url.com)
-
+- Solution URL: [Job listings with filtering from "Frontend Mentor" solution](https://www.frontendmentor.io/solutions/job-listings-with-filtering-challenge-Y2XMU9sA18)
+- Live Site URL: [Job listings with filtering from "GitHub" page](https://markanthonyjc.github.io/job-listings-with-filtering/)
 ## My process
 
 ### Built with
