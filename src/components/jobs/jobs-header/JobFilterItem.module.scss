@@ -1,0 +1,36 @@
+.job-filter-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem;
+  position: relative;
+  font-weight: var(--text-bold);
+
+  > p {
+    flex-grow: 1;
+    margin-right: 30px;
+  }
+
+  > button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+
+    background-color: var(--bg-color);
+    color: #fff;
+    border: none;
+    margin-left: 0.5rem;
+
+    width: 2rem;
+    overflow: hidden;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--bg-alternative-color);
+    }
+  }
+}

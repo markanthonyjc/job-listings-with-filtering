@@ -1,0 +1,22 @@
+@import "../../../assets/mixins";
+
+.job-item-image {
+  margin-top: -40px;
+
+  > img {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+@include media($screen-medium) {
+  .job-item-image {
+    display: flex;
+    align-items: center;
+    margin-top: initial;
+
+    > img {
+      height: 90%;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import "../../../assets/mixins";
+
+.job-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  margin-bottom: 100px;
+
+  > * {
+    margin: 1.5rem 0;
+  }
+}
+
+@include media($screen-medium) {
+  .job-list > * {
+    margin: 0.5rem 0;
+  }
+}

@@ -1,0 +1,29 @@
+.job-filter {
+  display: flex;
+  flex-direction: row;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex-grow: 1;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+
+  a {
+    color: var(--text-default-color);
+    font-weight: var(--text-bold);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--text-primary-color);
+      text-decoration-line: underline;
+    }
+  }
+}

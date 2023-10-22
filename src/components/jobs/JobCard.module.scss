@@ -1,0 +1,26 @@
+@import "./../../assets/mixins";
+
+.job-card {
+  @include card;
+
+  &-filter {
+    margin-top: -50px;
+  }
+
+  &-featured {
+    border-left: var(--secondary-color) solid 5px;
+  }
+}
+
+@media (max-width: $screen-small) {
+  .job-card {
+    width: 320px;
+  }
+}
+
+@media (min-width: $screen-small) {
+  .job-card {
+    padding: 1rem 2rem;
+    width: calc(100vw - 200px);
+  }
+}

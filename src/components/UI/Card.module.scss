@@ -1,0 +1,18 @@
+@import "../../assets/mixins";
+
+.card {
+  @include card;
+}
+
+@media (max-width: $screen-small) {
+  .card {
+    width: 320px;
+  }
+}
+
+@media (min-width: $screen-medium) {
+  .card {
+    padding: 2rem;
+    min-width: calc(100vw - 200px);
+  }
+}

@@ -1,7 +1,15 @@
-const App = () => {
-    return <div>
-        <h1>Hello World</h1>
-    </div>;
-};
+import Header from './components/layout/Header'
+import './assets/style.scss'
+import './App.scss'
+import JobMain from './components/jobs/JobMain'
 
-export default App;
+const App = () => {
+  return <>
+        <Header></Header>
+        <main>
+            <JobMain/>
+        </main>
+    </>
+}
+
+export default App
